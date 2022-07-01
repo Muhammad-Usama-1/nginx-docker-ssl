@@ -12,7 +12,7 @@ pipeline {
     }
     stage('Build Docker Image') {         
       steps{                
-	sh 'sudo docker build -t usama855/new:$BUILD_NUMBER .'           
+	sh 'docker build -t usama855/new:$BUILD_NUMBER .'           
         echo 'Build Image Completed'                
       }           
     }
