@@ -24,7 +24,7 @@ pipeline {
     }               
     stage('Push Image to Docker Hub') {         
       steps{                            
-	sh 'docker push usama/new:$BUILD_NUMBER'
+	sh 'docker push usama855/new:$BUILD_NUMBER'
         echo 'Push Image Completed'       
       }           
     }      
